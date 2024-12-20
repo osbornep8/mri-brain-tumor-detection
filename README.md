@@ -11,7 +11,7 @@ A deep learning model for detecting brain tumors in MRI scans using PyTorch and 
 ```bash
 brain-tumor-detection/
 │
-├── data/ # Data directory (not included in repo)
+├── brain_tumor_dataset/ # Data directory
 ├── models/ # Saved model weights and results
 ├── notebooks/ # Jupyter notebooks
 ├── src/ # Source code
