@@ -46,8 +46,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-
-Just run:
+If you have followed the previous instructions, you just need to run this command:
 
 ```bash
 python src/train.py
@@ -56,13 +55,6 @@ python src/train.py
 ## Project Overview
 
 This project implements a binary classification model to detect the presence of brain tumors in MRI scans. Using transfer learning with a ResNet50 architecture, the model achieves high precision in tumor detection, making it a potentially valuable tool for medical image analysis.
-
-The model achieves:
-
-- Precision: 0.8571
-- Recall: 0.7059
-- F1 Score: 0.7742
-- ROC AUC Score: 0.7721
 
 ## Dataset
 
@@ -103,28 +95,24 @@ The model was trained with the following specifications:
 
 The model achieves promising results in detecting brain tumors from MRI images:
 
-### Confusion Matrix
-
-```
-                 Predicted No Tumor  Predicted Tumor
-Actual No Tumor      6                2
-Actual Tumor         5                12
-```
-
 ### Performance Metrics
 
-- Precision: 0.8571 (85.71% of tumor predictions were correct)
-- Recall: 0.7059 (70.59% of actual tumors were detected)
-- F1 Score: 0.7742 (harmonic mean of precision and recall)
-- ROC AUC Score: 0.7721 (model's discriminative ability)
+- Precision: 0.9600 (96% of tumor predictions were correct)
+- Recall: 0.7500 (75% of actual tumors were detected)
+- F1 Score: 0.8421 (harmonic mean of precision and recall)
+- ROC AUC Score: 0.9504 (model's discriminative ability)
 
-### Training Progress
-
-[Training history plot description]
-
-## Model Weights
+### Model Weights
 
 Trained model weights can be downloaded from the releases section of this repository.
+
+## Future Improvements
+
+Experiment with other architectures (DenseNet, EfficientNet)
+Implement cross-validation
+Explore additional data augmentation techniques
+Collect and validate on external datasets
+Implement gradient checkpointing for memory efficiency
 
 ## Contributing
 
@@ -132,5 +120,6 @@ Feel free to open issues or submit pull requests with improvements.
 
 ## Acknowledgments
 
-- Dataset provided by Kaggle
-- Base implementation using PyTorch
+- Dataset available through Kaggle
+- PyTorch and torchvision libraries
+- Transfer learning with ResNet50 architecture
