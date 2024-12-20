@@ -1,0 +1,10 @@
+Test Set Metrics:
+Precision: 0.9600
+Recall: 0.7500
+F1 Score: 0.8421
+ROC AUC Score: 0.9504
+
+Confusion Matrix:
+                 Predicted No Tumor  Predicted Tumor
+Actual No Tumor      16                1
+Actual Tumor         8                24
